@@ -1,1 +1,2 @@
-# ShaSTA
+# Thank you for your patience, as we prepare the open source code. 
+Currently cleaning up code and making documentation...
