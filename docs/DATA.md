@@ -37,9 +37,9 @@ This is how the nuScenes dataset and pre-processed data should be organized in t
           ├── test_frame_info.json   <-- frame tokens in test data
           ├── train_frame_info.json  <-- frame tokens in train data
           ├── val_frame_info.json    <-- frame tokens in val data
-          ├── infos_test_10sweeps_withvelo.pkl                <-- LiDAR with 10 sweeps for test data (in the style of CenterPoint and mmdet)
-          ├── infos_train_10sweeps_withvelo_filter_True.pkl   <-- LiDAR with 10 sweeps for train data 
-          ├── infos_val_10sweeps_withvelo_filter_True.pkl     <-- LiDAR with 10 sweeps for validation data 
+          ├── infos_test_10sweeps_withvelo.pkl                <-- LiDAR point cloud with 10 sweeps for test data (in the style of CenterPoint and mmdet)
+          ├── infos_train_10sweeps_withvelo_filter_True.pkl   <-- LiDAR pc with 10 sweeps for train data 
+          ├── infos_val_10sweeps_withvelo_filter_True.pkl     <-- LiDAR pc with 10 sweeps for validation data 
 
 ```
 
@@ -47,15 +47,15 @@ This is how the nuScenes dataset and pre-processed data should be organized in t
 
 All of the content in nuScenes directory can be obtained from the [nuScenes download website](https://www.nuscenes.org/nuscenes#download). We understand that getting this data onto a machine may not be immediately obvious. Our recommendation is to begin downloading the data to your local machine in order to get the AWS link that it is coming from in your downloads page. Then, cancel the local download job and using the AWS link, go to your cluster where you actually want this data and run:
 ```bash
-wget AWS_LINK
+wget "AWS_LINK"
 ```
-You will need to run this 10 times, since the creator of nuScenes have split the trainval data into 10 separate downloads. For the test data, you only need one download. 
+You will need to run this 10 times, since the creators of nuScenes have split the trainval data into 10 separate downloads. For the test data, you only need one download. 
 
 ## Preprocess data
 
 ### Download zip file with preprocessed data (fast)
 
-Next, for the nusc_preprocssed directory, we recommend downloading the data from the zip file we provide as follows:
+Next, for the nusc_preprocessed directory, we recommend downloading the data from the zip file we provide as follows:
 ```bash
 wget http://download.cs.stanford.edu/juno/ShaSTA/nusc_preprocessed.zip
 unzip nusc_preprocessed.zip
@@ -63,15 +63,19 @@ unzip nusc_preprocessed.zip
 
 ### Generate preprocessed data yourself (time-consuming)
 
-If you want to generate the preprocessed data yourself (we do not recommend since it is time-consuming), please follow the CenterPoint instructions for getting the infos pkl files and for the remainder that is ShaSTA-specific, please run:
+If you want to generate the preprocessed data yourself (we do not recommend this option, since it is time-consuming), there are two preprocessing steps to follow. To preprocess your detections and obtain the ground-truth affinity matrices, please run:
 ```bash
 chmod +x preprocessing.sh
 ./preprocessing.sh
 ```
 
-If you want to run this algorithm with other 3D detections, i.e. not CenterPoint, then we recommend using the preprocessing shell script to get that information. You only need to regenerate the information in the detections and gt_shasta folders. Make sure to change the arguments that say "cp" to your detection name. 
-
-Additionally, to preprocess the LiDAR point clouds with 10 sweeps, you would run the following:
+Additionally, to preprocess the LiDAR point clouds with 10 sweeps, you would run the following command line. Please note that this portion of the preprocessing is taken from the CenterPoint repo.
 ```bash
 python tools/create_data.py nuscenes_data_prep --root_path="data/nuScenes" --save_path="data/nusc_preprocessed" --version="v1.0-trainval" --nsweeps=10
 ```
+
+### Using other detections
+
+Since tracking quality is largely dependent on the quality of your 3D detections, we understand that some people might be interested in testing different detectors within this tracking framework.
+
+If you want to run this algorithm with other 3D detections, i.e. not CenterPoint, then we recommend using the preprocessing shell script to get that information. You only need to regenerate the information in the detections and gt_shasta folders. Make sure to change the arguments that say "cp" to your detection name. 

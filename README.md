@@ -39,11 +39,11 @@ For reproducing our environment setup, please see [ENV_SETUP.md](docs/ENV_SETUP.
 ## Data
 For getting the nuScenes data and obtaining our pre-processed data, please see [DATA.md](docs/DATA.md).
 
-## Reproduce Results
-For running our pre-trained models to reproduce our results or training and evaluating your own models with this framework, please see [MODELS.md](docs/MODELS.md). We also include a link to download our validation tracking results that were reported in the paper. 
+## Reproduce Results and Extensions
+For running our pre-trained models to reproduce our results, or training and evaluating your own models with this framework, please see [MODELS.md](docs/MODELS.md). We also include a link to download our validation tracking results that were reported in the paper. 
 
 ## Visualization
-We provide a helpful script for visualizing your results through the two views: (1) top-down view with LiDAR point clouds projected onto the road map, and (2) front camera view with 3D boxes projected onto the scene. These two views are used in the qualitative results we show in our [project website's video](https://youtu.be/nWR48ws7ns8).
+We provide a helpful script for visualizing your results through two views: (1) top-down view with LiDAR point clouds projected onto the road map, and (2) front camera view with 3D boxes projected onto the scene. These two views are used in the qualitative results we show in our [video demo](https://youtu.be/nWR48ws7ns8).
 
 Please see [VISUALIZE.md](docs/VISUALIZE.md). We highly recommend using our visualization tool for your tracking project to obtain qualitative results both for the development stage of your project and for publication. Please cite our repo if you find this helpful. 
 

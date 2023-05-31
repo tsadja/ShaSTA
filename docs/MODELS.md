@@ -1,5 +1,5 @@
 # Important Caveat
-**Please note that I found an indexing bug after publishing my work on arXiv and the nuScenes leaderboard and this fix is reflected in the repo, so your results might be slightly different from my reported values.**
+**Please note that I found an indexing bug after publishing my work on arXiv and the nuScenes leaderboard and this fix is reflected in the code, so your results might be slightly different from my reported values.**
 
 # Train models
 In order to train models and validate them, run the following command line:

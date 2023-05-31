@@ -17,7 +17,7 @@ export CC=/usr/bin/gcc-7
 export CXX=/usr/bin/g++-7
 ```
 
-We use conda environments, so please make sure to install conda and update your .bashrc accordingly. Go to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html) to follow the instruction. Note that we find Miniconda sufficient. 
+We use conda environments, so please make sure to install conda and update your .bashrc accordingly. [This link](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html) contains the instructions for installing conda. Note that we find Miniconda sufficient. 
 
 Set up the conda environment with the following lines:
 ```bash
