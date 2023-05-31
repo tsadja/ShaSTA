@@ -1,0 +1,5 @@
+# ninja log v5
+0	1431	1674288848158604224	/home/ubuntu/3dmot-shasta/det3d/ops/iou3d_nms/build/temp.linux-x86_64-cpython-37/src/iou3d_nms_kernel.o	18a26b5559c665e7
+0	11072	1674288857798577236	/home/ubuntu/3dmot-shasta/det3d/ops/iou3d_nms/build/temp.linux-x86_64-cpython-37/src/iou3d_cpu.o	5d7defb90391b7d0
+0	11375	1674288858102576385	/home/ubuntu/3dmot-shasta/det3d/ops/iou3d_nms/build/temp.linux-x86_64-cpython-37/src/iou3d_nms.o	2e715d03eb3ee0ca
+0	15995	1674288862718563462	/home/ubuntu/3dmot-shasta/det3d/ops/iou3d_nms/build/temp.linux-x86_64-cpython-37/src/iou3d_nms_api.o	6465e89fb7a82585

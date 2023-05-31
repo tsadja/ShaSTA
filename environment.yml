@@ -1,0 +1,37 @@
+name: shasta
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - blas=1.0=mkl
+  - ca-certificates=2022.4.26=h06a4308_0
+  - certifi=2021.10.8=py37h06a4308_2
+  - cudatoolkit=10.2.89=hfd86e86_1
+  - intel-openmp=2021.4.0=h06a4308_3561
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgomp=9.3.0=h5101ec6_17
+  - libllvm11=11.1.0=h3826bc1_0
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - libuv=1.40.0=h7b6447c_0
+  - mkl=2021.4.0=h06a4308_640
+  - mkl-service=2.4.0=py37h7f8727e_0
+  - ncurses=6.3=h7f8727e_2
+  - openssl=1.1.1o=h7f8727e_0
+  - pip=21.2.2=py37h06a4308_0
+  - python=3.7.11=h12debd9_0
+  - python_abi=3.7=2_cp37m
+  - pytorch-mutex=1.0=cpu
+  - readline=8.1.2=h7f8727e_1
+  - six=1.16.0=pyhd3eb1b0_1
+  - sqlite=3.37.2=hc218d9a_0
+  - tbb=2021.5.0=hd09550d_0
+  - tk=8.6.11=h1ccaba5_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7f8727e_4
+prefix: /home/ubuntu/miniconda3/envs/shasta

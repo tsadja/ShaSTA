@@ -1,0 +1,3 @@
+# ninja log v5
+2	9917	1668057170366181897	/juno/u/tsadja/3dmot-shasta/det3d/ops/dcn/build/temp.linux-x86_64-cpython-37/src/deform_conv_cuda_kernel.o	e67e3322be460ed4
+0	9920	1674288911942425657	/home/ubuntu/3dmot-shasta/det3d/ops/dcn/build/temp.linux-x86_64-cpython-37/src/deform_conv_cuda_kernel.o	328de509adaf0ca3
