@@ -6,12 +6,15 @@
 > Tara Sadjadpour, Jie Li, Rares Ambrus, Jeannette Bohg,        
 > *arXiv technical report ([arXiv 2211.03919](https://arxiv.org/abs/2211.03919))*  
 
-@article{sadjadpour2022shasta,
-  title={ShaSTA: Modeling Shape and Spatio-Temporal Affinities for 3D Multi-Object Tracking},
-  author={Sadjadpour, Tara and Li, Jie and Ambrus, Rares and Bohg, Jeannette},
-  journal={arXiv preprint arXiv:2211.03919},
-  year={2022}
-}
+
+
+    @article{sadjadpour2022shasta,
+      title={ShaSTA: Modeling Shape and Spatio-Temporal Affinities for 3D Multi-Object Tracking},
+      author={Sadjadpour, Tara and Li, Jie and Ambrus, Rares and Bohg, Jeannette},
+      journal={arXiv preprint arXiv:2211.03919},
+      year={2022},
+    }
+
 
 # Highlights
 - **Simple:** Two sentences method summary: ShaSTA models shape and spatio-temporal affinities between tracks and detections in consecutive frames. By better understanding objects’ shapes and spatio-temporal contexts, ShaSTA improves data association, false-positive elimination, false-negative propagation, newborn
