@@ -8,12 +8,15 @@
 
 
 
-    @article{sadjadpour2022shasta,
-      title={ShaSTA: Modeling Shape and Spatio-Temporal Affinities for 3D Multi-Object Tracking},
+    @article{sadjadpour2023shasta,
+      title={Shasta: Modeling shape and spatio-temporal affinities for 3d multi-object tracking},
       author={Sadjadpour, Tara and Li, Jie and Ambrus, Rares and Bohg, Jeannette},
-      journal={arXiv preprint arXiv:2211.03919},
-      year={2022},
+      journal={IEEE Robotics and Automation Letters},
+      year={2023},
+      publisher={IEEE}
     }
+
+If you enjoy this work and are interested in multi-modal perception with camera-LiDAR fusion, please also see our follow-up work [ShaSTA-Fuse: Camera-LiDAR Sensor Fusion to Model Shape and Spatio-Temporal Affinities for 3D Multi-Object Tracking](https://arxiv.org/abs/2310.02532).
 
 
 # Highlights
